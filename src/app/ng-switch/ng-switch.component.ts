@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NgSwitchComponent implements OnInit {
 
+  public choose = '';
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  setValue(drp:any){
+    this.choose = drp.target.value;
   }
 
 }

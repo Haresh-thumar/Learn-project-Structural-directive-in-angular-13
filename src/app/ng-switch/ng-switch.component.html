@@ -1,1 +1,19 @@
-<p>ng-switch works!</p>
+<h1>welcome to *ngSwitch Condition</h1>
+
+
+<br><br>
+
+<select (change)="setValue($event)">
+  <option value="">-- Select --</option>
+  <option value="one">one</option>
+  <option value="two">two</option>
+  <option value="three">three</option>
+  <option value="another">another</option>
+</select>
+
+<div [ngSwitch]="choose">
+  <h3 *ngSwitchCase="'one'">First</h3>
+  <h3 *ngSwitchCase="'two'">Second</h3>
+  <h3 *ngSwitchCase="'three'">Third</h3>
+  <h3 *ngSwitchDefault>Default</h3>
+</div>
