@@ -1,0 +1,74 @@
+<h1>welcome to *ngIf Condition</h1>
+
+<!---========================== Example - 1 ============================-->
+<!-- use *ngIf condition -->
+<!-- <input type="radio" name="radio1" (click)="changeValue(true)"> True
+<br>
+<input type="radio" name="radio2" (click)="changeValue(false)"> False
+
+<div *ngIf="isValid">
+  this is valid data
+</div>
+<div *ngIf="!isValid">
+  this is not valid data
+</div> -->
+
+
+<!---========================== Example - 2 ============================-->
+<!-- use *ngIf with else condition -->
+<!-- <input type="radio" name="radio1" (click)="changeValue(true)"> True
+<br>
+<input type="radio" name="radio2" (click)="changeValue(false)"> False
+<br><br>
+<div *ngIf="isValid; else elseblock">
+  this is valid data
+</div>
+
+<ng-template #elseblock>
+<div>
+  this is not valid data using else block
+</div>
+</ng-template> -->
+
+
+<!---========================== Example - 3 ============================-->
+<!-- use *ngIf with then else condition -->
+<!-- <input type="radio" name="radio1" (click)="changeValue(true)"> True
+<br>
+<input type="radio" name="radio2" (click)="changeValue(false)"> False
+<br><br>
+
+<div *ngIf="isValid; then thenblock; else elseblock">
+  <ng-template #thenblock>
+    <div>
+      this is valid data
+    </div>
+  </ng-template>
+</div>
+
+<ng-template #elseblock>
+  <div>
+    this is not valid data using else block
+  </div>
+</ng-template> -->
+
+
+<!---========================== Example - 4 ============================-->
+<!-- <button (click)="clicksome(true)">if</button>
+<button (click)="clicksome(false)">else</button>
+
+<ng-container *ngIf="isLoggedIn; then userloggedIn; else userloggedOut">
+</ng-container>
+<ng-template #userloggedIn>
+  <div>
+    Hello User
+  </div>
+</ng-template>
+<ng-template #userloggedOut>
+  <div>
+    Please Login
+  </div>
+</ng-template> -->
+
+
+
