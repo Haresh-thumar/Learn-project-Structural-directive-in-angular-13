@@ -2,7 +2,7 @@
 
 <!---========================== Example - 1 ============================-->
 <!-- use *ngIf condition -->
-<!-- <input type="radio" name="radio1" (click)="changeValue(true)"> True
+<input type="radio" name="radio1" (click)="changeValue(true)"> True
 <br>
 <input type="radio" name="radio2" (click)="changeValue(false)"> False
 
@@ -11,12 +11,12 @@
 </div>
 <div *ngIf="!isValid">
   this is not valid data
-</div> -->
+</div>
 
 
 <!---========================== Example - 2 ============================-->
 <!-- use *ngIf with else condition -->
-<!-- <input type="radio" name="radio1" (click)="changeValue(true)"> True
+<input type="radio" name="radio1" (click)="changeValue(true)"> True
 <br>
 <input type="radio" name="radio2" (click)="changeValue(false)"> False
 <br><br>
@@ -28,12 +28,12 @@
 <div>
   this is not valid data using else block
 </div>
-</ng-template> -->
+</ng-template>
 
 
 <!---========================== Example - 3 ============================-->
 <!-- use *ngIf with then else condition -->
-<!-- <input type="radio" name="radio1" (click)="changeValue(true)"> True
+<input type="radio" name="radio1" (click)="changeValue(true)"> True
 <br>
 <input type="radio" name="radio2" (click)="changeValue(false)"> False
 <br><br>
@@ -50,11 +50,11 @@
   <div>
     this is not valid data using else block
   </div>
-</ng-template> -->
+</ng-template>
 
 
 <!---========================== Example - 4 ============================-->
-<!-- <button (click)="clicksome(true)">if</button>
+<button (click)="clicksome(true)">if</button>
 <button (click)="clicksome(false)">else</button>
 
 <ng-container *ngIf="isLoggedIn; then userloggedIn; else userloggedOut">
@@ -68,7 +68,22 @@
   <div>
     Please Login
   </div>
-</ng-template> -->
+</ng-template>
 
 
 
+
+<!---========================== Example - 5 ============================-->
+<button class="btn-success" (click)="onCreateBlock()">Create Block</button>
+<br><br>
+<div *ngIf="isValid; then thenblock else elseblock"></div>
+<ng-template #thenblock>
+  <div>block has been created and block name is my block.</div>
+</ng-template>
+<ng-template #elseblock>
+  <div>no block has been created yet.</div>
+</ng-template>
+
+
+
+<!-- <hr> -->

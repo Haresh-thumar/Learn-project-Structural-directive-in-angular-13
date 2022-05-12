@@ -7,23 +7,29 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NgIfComponent implements OnInit {
 
-   // isValid:boolean = true;
-  // thenblock:any;
+  isValid:boolean=false;
 
-  // userLoggedIn: boolean = true;
-  // isLoggedIn: boolean = true;
+  //  isValid:boolean = true;
+  thenblock:any;
+
+  userLoggedIn: boolean = true;
+  isLoggedIn: boolean = true;
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  // changeValue(valid:any){
-  //   this.isValid = valid;
-  // }
+  changeValue(valid:any){
+    this.isValid = valid;
+  }
 
-  // clicksome(data:any){
-  //   this.isLoggedIn = data;
-  // }
+  clicksome(data:any){
+    this.isLoggedIn = data;
+  }
+
+  onCreateBlock(){
+    this.isValid = true;
+  }
 
 }

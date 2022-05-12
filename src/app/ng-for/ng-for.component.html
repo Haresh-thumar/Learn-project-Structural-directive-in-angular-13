@@ -3,8 +3,107 @@
 
 <h2>Using *ngFor</h2>
 
+<!--======================== Example - 1, (method-1) =======================-->
 <ul>
-  <li *ngFor="let student of Students; let i=index">
+  <li><h2> * For Loop (Method - 1)</h2></li>
+  <li *ngFor="let student of Students; let i=index; let f=first; let l=last;">
+    {{i + 1}} - {{student.name}} - {{f}} - {{l}}
+  </li>
+</ul>
+
+
+<!--======================== Example - 2, (method-2) ========================-->
+<ul>
+  <li><h2> * For Loop (Method - 2)</h2></li>
+  <li *ngFor="let student of Students; index as i; first as f; last as l;">
+    {{i + 1}} - {{student.name}} - {{f}} - {{l}}
+  </li>
+</ul>
+
+
+<!--======================== Example - 3 (get only index) ========================-->.
+<!--- method-1 --->
+<ul>
+  <li><h2> * Get Only Index (Method - 1)</h2></li>
+  <li *ngFor="let student of Students; let i=index;">
     {{i + 1}} - {{student.name}}
   </li>
 </ul>
+<!--- method-2 --->
+<ul>
+  <li><h2> * Get Only Index (Method - 2)</h2></li>
+  <li *ngFor="let student of Students; index as i;">
+    {{i + 1}} - {{student.name}}
+  </li>
+</ul>
+
+
+<!--======================== Example - 4 (get first value true) ========================-->.
+<!--- method-1 --->
+<ul>
+  <li><h2> * get first value true (Method - 1)</h2></li>
+  <li *ngFor="let student of Students; let f=first;">
+    {{student.name}} - {{f}}
+  </li>
+</ul>
+<!--- method-2 --->
+<ul>
+  <li><h2> * get first value true (Method - 2)</h2></li>
+  <li *ngFor="let student of Students; first as f;">
+    {{student.name}} - {{f}}
+  </li>
+</ul>
+
+
+<!--======================== Example - 5 (get last value true) ========================-->.
+<!--- method-1 --->
+<ul>
+  <li><h2> * get last value true (Method - 1)</h2></li>
+  <li *ngFor="let student of Students; let f=last;">
+    {{student.name}} - {{f}}
+  </li>
+</ul>
+<!--- method-2 --->
+<ul>
+  <li><h2> * get last value true (Method - 2)</h2></li>
+  <li *ngFor="let student of Students; last as f;">
+    {{student.name}} - {{f}}
+  </li>
+</ul>
+
+
+<!--======================== Example - 6 (get even value true) ========================-->.
+<!--- method-1 --->
+<ul>
+  <li><h2> * get even value true (Method - 1)</h2></li>
+  <li *ngFor="let student of Students; let e=even;">
+    {{student.name}} - {{e}}
+  </li>
+</ul>
+<!--- method-2 --->
+<ul>
+  <li><h2> * get even value true (Method - 2)</h2></li>
+  <li *ngFor="let student of Students; even as e;">
+    {{student.name}} - {{e}}
+  </li>
+</ul>
+
+
+<!--======================== Example - 7 (get odd value true) ========================-->.
+<!--- method-1 --->
+<ul>
+  <li><h2> * get odd value true (Method - 1)</h2></li>
+  <li *ngFor="let student of Students; let o=odd;">
+    {{student.name}} - {{o}}
+  </li>
+</ul>
+<!--- method-2 --->
+<ul>
+  <li><h2> * get odd value true (Method - 2)</h2></li>
+  <li *ngFor="let student of Students; odd as o;">
+    {{student.name}} - {{o}}
+  </li>
+</ul>
+
+
+
