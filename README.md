@@ -1,27 +1,42 @@
-# AngularFullyLearning
+# Structural Directive in Angular 13
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.2.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.0.
 
-## Development server
+<h2>* Structural Directive </h2>
+<ul>
+  <li>*ngFor</li>
+  <li>*ngIf</li>
+  <li>*ngSwitch</li>
+  <li>TrackByngFor</li>
+  <li>Grouping *ngFor</li>
+</ul>
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
+<h2>* Structural Directive </h2>
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+<h4>*ngIf</h4>
 
-## Build
+![image](https://user-images.githubusercontent.com/100337599/209517861-e9d5464e-f654-4ac2-b6f5-6ee3fcb83346.png)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+<h4>*ngSwitch</h4>
 
-## Running unit tests
+![image](https://user-images.githubusercontent.com/100337599/209517962-30fc785c-cc0e-46a7-8c15-2be64ca743bd.png)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+<h4>*ngFor</h4>
 
-## Running end-to-end tests
+![image](https://user-images.githubusercontent.com/100337599/209532916-5cadccd2-e9d0-423b-b5b7-d1361990675b.png)
+![image](https://user-images.githubusercontent.com/100337599/209533032-45fa3f35-1fee-4073-88c2-dab4eb732603.png)
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+<h4>TrackByngFor</h4>
 
-## Further help
+![image](https://user-images.githubusercontent.com/100337599/209533135-d44e3a1f-ff3e-4c27-be14-40f4df09fa9d.png)
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+<h4>Grouping *ngFor</h4>
+
+![image](https://user-images.githubusercontent.com/100337599/209539481-82e67968-67f3-4bef-ac8b-b96ee95b8662.png)
+
+<h2>* Build & Run Project</h2>
+<ul>
+  <li>ng build</li>
+  <li>ng serve | npm start</li>
+</ul>
