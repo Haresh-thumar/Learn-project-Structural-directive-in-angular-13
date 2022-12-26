@@ -7,7 +7,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
   <li>*ngFor</li>
   <li>*ngIf</li>
   <li>*ngSwitch</li>
-  <li>TrackByngFor</li>
+  <li>TrackBy *ngFor</li>
   <li>Grouping *ngFor</li>
 </ul>
 
