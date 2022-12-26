@@ -1,9 +1,15 @@
+<style>
+.dir-name li {
+  color: green;
+}
+</style>
+
 # Structural Directive in Angular 13
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.0.
 
 <h2>* Structural Directive </h2>
-<ul>
+<ul class="dir-name">
   <li>*ngFor</li>
   <li>*ngIf</li>
   <li>*ngSwitch</li>
