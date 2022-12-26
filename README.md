@@ -35,6 +35,11 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ![image](https://user-images.githubusercontent.com/100337599/209539481-82e67968-67f3-4bef-ac8b-b96ee95b8662.png)
 
+<h4>Project Code Structure</h4>
+
+![image](https://user-images.githubusercontent.com/100337599/209544419-23ccc962-08d5-41df-8197-65c62de8b4d6.png)
+
+
 <h2>* Build & Run Project</h2>
 <ul>
   <li>ng build</li>
