@@ -4,11 +4,11 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 <h2>* Structural Directive </h2>
 <ul>
-  <li>Grouping *ngFor</li>
   <li>*ngFor</li>
   <li>*ngIf</li>
   <li>*ngSwitch</li>
   <li>TrackByngFor</li>
+  <li>Grouping *ngFor</li>
 </ul>
 
 
@@ -30,6 +30,10 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 <h4>TrackByngFor</h4>
 
 ![image](https://user-images.githubusercontent.com/100337599/209533135-d44e3a1f-ff3e-4c27-be14-40f4df09fa9d.png)
+
+<h4>Grouping *ngFor</h4>
+
+![image](https://user-images.githubusercontent.com/100337599/209539481-82e67968-67f3-4bef-ac8b-b96ee95b8662.png)
 
 <h2>* Build & Run Project</h2>
 <ul>
