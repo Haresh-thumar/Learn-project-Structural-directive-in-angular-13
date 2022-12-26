@@ -1,1 +1,16 @@
 <p>grouping-ngfor works!</p>
+
+<h1>Grouping *ngFor Example</h1>
+<!-------- First Loop -------->
+<ul *ngFor="let group of countryDetails">
+  <li style="color: green;">{{group.country}}</li>
+  <!-------- Second Loop -------->
+  <ul *ngFor="let person of group.people">
+    <li style="color: rgb(255, 107, 8);">{{person.name}} | {{person.gender}} | {{person.age}} </li>
+    <!-------- Third Loop -------->
+    <ul *ngFor="let place of person.address">
+      <li style="color: rgb(43, 0, 233);">{{place.street}} | {{place.city}} | {{place.country}}</li>
+    </ul>
+  </ul>
+</ul>
+<br><br>
